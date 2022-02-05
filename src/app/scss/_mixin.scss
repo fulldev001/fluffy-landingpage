@@ -1,0 +1,277 @@
+@mixin efekt($what: all) {
+  transition: $what .25s ease-in-out;
+}
+
+.efekt {
+  transition: all 0.25s ease-in-out;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gradient {
+  background: linear-gradient(to left, #F77CE1 0%, #A180F7 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(to left, #F77CE1 0%, #A180F7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bdrs {
+  border-radius: 16px;
+}
+
+.dikeyAbsolute {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dikeyFlex {
+  display: flex;
+  align-items: center;
+}
+
+.bxs {
+  box-shadow: 0 2px 6px $colorBlack, 0 2px 6px $colorBlack;
+  transition: all 0.2s ease-in-out;
+
+  &:Hover {
+    box-shadow: 0 8px 18px $colorBlack, 0 8px 18px $colorBlack;
+  }
+}
+
+.bxsh {
+  transition: all 0.2s ease-in-out;
+
+  &:Hover {
+    box-shadow: 0 10px 22px $colorBlack, 0 10px 10px $colorBlack;
+  }
+}
+
+.fz15 {
+  font-size: 1.5rem;
+}
+
+.fz14 {
+  font-size: 14rem;
+}
+
+.fz13 {
+  font-size: 1.3rem;
+}
+
+.fz12 {
+  font-size: 1.2rem;
+}
+
+.fz11 {
+  font-size: 1.1rem;
+}
+
+.fz10 {
+  font-size: 1rem;
+}
+
+.fz9 {
+  font-size: 0.9rem;
+}
+
+.fz85 {
+  font-size: 0.85rem;
+}
+
+.fz8 {
+  font-size: 0.8rem;
+}
+
+.fz7 {
+  font-size: 0.7rem;
+}
+
+.bgcover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fw300 {
+  font-weight: 300;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw800 {
+  font-weight: 800;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.mb75 {
+  margin-bottom: 75px;
+}
+
+.mb100 {
+  margin-bottom: 100px;
+}
+
+.mb150 {
+  margin-bottom: 150px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}
+
+.mt75 {
+  margin-top: 75px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+.mt150 {
+  margin-top: 150px;
+}
+
+.visible-scrollbar {
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:vertical {
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $colorBlack;
+    border-radius: 10px;
+    border: 1px solid $colorBlack;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: $colorBlack;
+  }
+}
+
+.scrollbar {
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $colorBlack-2;
+    border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $colorPurple;
+  }
+}
+
+.scrollbar-yatay {
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $colorBlack-2;
+    border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $colorPurple;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+.mb30{
+  margin-bottom: 30px;
+}

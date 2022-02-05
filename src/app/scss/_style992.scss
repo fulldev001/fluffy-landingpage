@@ -1,0 +1,44 @@
+@media (max-width: 992px) {
+  .hero__title {
+    font-size: 3.75rem;
+  }
+
+  .entry-images__title,
+  .external-sources__title {
+    font-size: 2.75rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+
+    &--h2 {
+      font-size: 1.875rem;
+    }
+  }
+
+  .sticky-section__left p,
+  .text {
+    font-size: 1rem;
+  }
+
+  #clients-slider .swiper-slide,
+  #team-slider .swiper-slide {
+    width: 250px;
+  }
+
+  .client {
+    padding: 20px 20px 30px;
+  }
+
+  .footer-menu__title {
+    font-size: 1.25rem;
+  }
+
+  .footer-menu__link {
+    font-size: 1rem;
+  }
+
+  .menu__link {
+    font-size: 2rem;
+  }
+}

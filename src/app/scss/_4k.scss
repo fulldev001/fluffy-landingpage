@@ -1,0 +1,63 @@
+@media(min-width:1921px) {
+  html {
+    font-size: 150%;
+  }
+
+  .container {
+    max-width: 80%;
+  }
+
+  .entry-images__title {
+    width: 100%;
+  }
+
+  .entry-images {
+    padding-bottom: 22%;
+  }
+
+  .sticky-section__left p {
+    width: 40%;
+  }
+
+  #clients-slider .swiper-slide,
+  #team-slider .swiper-slide {
+    width: 18%;
+  }
+
+  .about__left .text {
+    width: 60%;
+  }
+
+  .contact-us__content {
+    width: 25%;
+  }
+
+  .appstore-link {
+    padding: 16px 40px 16px 90px;
+  }
+
+  .logo {
+    width: 5vw;
+  }
+
+  .social__link svg {
+    width: 65px;
+    height: 65px;
+  }
+
+  .hamburger {
+    transform: scale(1.2);
+  }
+
+  .external-sources__icons {
+    width: 60%;
+  }
+
+  .external-sources__figure {
+    width: 25%;
+  }
+
+  .source-icons {
+    width: 35%;
+  }
+}

@@ -1,0 +1,250 @@
+$inter: 'Inter', sans-serif;
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #030405;
+  color: #fff;
+  font-family: $inter;
+  line-height: 1.5;
+}
+
+.outline-button{
+  position: relative;
+  display: inline-block;
+  &:before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background: linear-gradient(to left, #A180F7 0%, #F77CE1 100%);
+    border-radius: 16px;
+    z-index: 1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 16px;
+    z-index: 2;
+    transition: background .3s;
+  }
+
+  .button{
+    z-index: 3;
+  }
+
+  &:hover{
+    &:after{
+          background: #080C11;
+    }
+  }
+}
+
+.button {
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.875rem 1.75rem;
+  border-radius: 16px;
+  font-size: 18px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, opacity 0.35s ease-in-out;
+
+  &--outlineGradient {
+    background: linear-gradient(to left, #F77CE1 0%, #A180F7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.swiper-slide {
+  img {
+    width: 100%;
+  }
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+img,
+svg {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: $inter;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.slick-slide {
+  outline: transparent !important;
+
+  a {
+    outline: transparent !important;
+  }
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-active {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+.tabcontent {
+  animation: fadeIn 0.5s;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeInTop {
+  animation: fadeIn 0.5s;
+}
+@keyframes fadeInTop {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.form-control {
+  display: block;
+  padding: 0.975rem 0.9rem;
+  width: 100%;
+  border: 1px solid #22262B;
+  border-radius: 16px;
+  background-color: transparent;
+  background-clip: padding-box;
+  color: #6D747C;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .form-control {
+    transition: none;
+  }
+}
+
+.form-control:focus {
+  outline: 0;
+  border-color: $colorPink;
+  background-color: rgba($colorPink, 0.1);
+  box-shadow: 0 0 0 0.25rem rgba($colorPink, 0.25);
+  color: #bbc2cc;
+}
+
+.form-control::-webkit-date-and-time-value {
+  height: 1.5em;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #6D747C;
+  opacity: 1;
+}
+
+.form-control::-moz-placeholder {
+  color: #6D747C;
+  opacity: 1;
+}
+
+.form-control::placeholder {
+  color: #6D747C;
+  opacity: 1;
+}

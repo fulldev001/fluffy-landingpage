@@ -1,0 +1,28 @@
+@media (max-width: 576px) {
+  .footer__logo {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .footer-menu {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+
+  .entry-images {
+    margin-bottom: 50px;
+    padding-bottom: 240px;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+
+  .footer__logo--mobile {
+    display: block;
+  }
+}

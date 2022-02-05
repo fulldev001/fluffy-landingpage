@@ -1,0 +1,24 @@
+@media (max-width:1200px) {
+  .hero__title {
+    font-size: 4.375rem;
+  }
+
+  .entry-images__title,
+  .external-sources__title {
+    font-size: 3.25rem;
+  }
+
+  .title {
+    font-size: 3.25rem;
+
+    &--h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .client__text,
+  .sticky-section__left p,
+  .text {
+    font-size: 1.125rem;
+  }
+}
